@@ -1,0 +1,123 @@
+
+*{
+    padding: 0px;
+    margin: 0%;
+}
+html{
+font-size: 62.5%;
+overflow: auto;
+scroll-padding-top:5.5rem;
+scroll-behavior: smooth;
+}
+
+
+header{
+    
+    display: flex;
+    margin: 0.5rem;
+    background-color: rgb(252, 224, 155);   
+    overflow: hidden;
+    transition: all 0.2s linear;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; 
+    padding: 1rem 7;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.nav-bar{
+    margin: 3rem ;
+    display: flex;
+    margin-left: 25rem;
+    align-items: center;
+    width: 100rem;
+
+}
+.nav-bar a {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+  }
+
+.headbar{
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.6em;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+ 
+}
+.nav-bar1{
+    margin: 4rem;
+
+    margin-left: 13rem;
+    width: 19%;
+    
+
+}
+.active{
+    
+    font-size: 3em;
+    padding: 1rem;
+    color: black;
+    border-radius:50%;
+    background: #eee;
+    
+}
+
+a:hover{
+   
+    background-color: rgb(249, 148, 23);
+    color: white;
+    
+}
+.con{
+    border: 2px solid red;
+    margin-top: 15rem;
+    margin-right: 160rem ;
+    background-color: rgb(222, 236, 236);
+    
+}
+
+h1{
+    font-size: 4em;
+    text-align: center;
+    background-color: rgb(163, 238, 88);
+    height: 2em;
+}
+ul{
+    
+    font-size: 3em;
+}
+a{
+    text-decoration: none;
+}
+li{
+    padding: 2rem;
+    color: brown;
+}
+
+li:hover{
+    background-color: rgb(170, 90, 245);
+    color: white;
+    font-weight: bold;
+    
+}
+
+@media(max-width:998px){
+html{
+font-size: 55%;
+
+}
+}
+
+@media(max-width:768px){
+html{
+font-size: 45%;
+}
+
+}
+

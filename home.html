@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Home page</title>
+</head>
+<body>
+    <header>
+    
+    <img src="food.png" alt="logo" class="logo1"  height="2%">
+    <nav class="nav-bar">
+            <a href="home.html" class="headbar">Home</a>
+            <a href="home.html#special" class="headbar">Dishes</a>
+            <a href="about.html" class="headbar">About</a>
+            <a href="feedback.html" class="headbar">Feedback</a>
+            <a href="order.html" class="headbar">Orders</a>
+            <a href="" class="headbar"> Reviews</a>
+            <a href="contact.html" class="headbar">Contact Us</a>
+            
+        
+    </nav>
+    <div class="nav-bar1">
+        <a href="#" class="active"><i class="fa fa-fw fa-search"></i></a>
+        
+        <a href="#" class="active"><i class="fa fa-fw fa-heart"></i></a>
+        <a href="#" class="active"><i class="fa fa-fw fa-shopping-cart"></i></a>
+        <a href="#" class="active"><i class="fa fa-fw fa-user"></i></a>
+        <a href="index.html" class="active"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+    </div>
+    
+</header>
+<div id="search-bar" class="search-bar-container">
+    <input type="text" id="search-input" placeholder="Search...">
+    
+</div>
+<div class="container">
+    <div class="title">
+    <h1 id="heading">30 % Off On Your <br>First Order</h1>
+    <br>
+    <a href="order.html" id="subbb"><button class="ordernow" >Order Now</button></a>
+</div>
+<div class="hurry">
+    <img src="hurryup.png" alt="" class="hurryup">
+</div>
+
+<div class="burger">
+    <img src="subway.png" alt="subway" class="subway">
+</div>
+</div>
+<a name="special"></a>
+<div class="special">
+    <h2 class="our">Our Specials</h2>
+    <div class="foods">
+        <img src="foods.jpg" class="imag" >
+        <img src="food2.jpeg"class="imag"  >
+        <img src="food4.jpeg" class="imag" >
+        <img src="food33.jpg" class="imag" >
+        <img src="food5.jpeg" class="imag" >
+       
+
+    </div>
+    <table>
+        <tr >
+            <div class="trr">
+            <th class="p">Biryani</th>
+            <th class="p">Paneer Tikka</th>
+            <th class="p">Pav Bhaji</th>
+            <th  class="p">Chole Bhature</th>
+            <th class="p">Tadai Paneer</th>
+        </div>
+        </tr>
+    </table> 
+</div>
+<div class="resto">
+    <h2>Top Restaurants</h2>
+    <div class="top">
+        <img src="res1.jpeg" height="10%" width="19.5%">
+        <img src="re2.jpeg" height="10%" width="19.5%">
+
+        <img src="res4.jpeg" height="10%" width="19.5%">
+        <img src="res5.jpg" height="10%" width="19.5%">
+        <img src="res6.jpg" height="10%" width="19.5%">
+    </div>
+    <table>
+        <tr>
+            <th class="pp">Haldiram <br>Medical Square Nagpur</th>
+            <th class="pp">BombayWala <br>Hingna</th>
+           
+            <th class="pp">Rock Bottom<br> Wanadongri</th>
+            <th class="pp">Zero Degree <br>Rajiv Nagar  Hingna</th>
+            <th class="pp">Queens Restro <br>Ring Road <br>Trimurti NAgar</th>
+        </tr>
+    </table> 
+</div>
+
+
+
+<footer>
+    <div class="add1">
+        <img src="food.png" height="100px">
+        <p>5th floor , A-118 Wadi Nagpur</p>
+    </div>
+    <div class="add2">
+        <p>Foodies</p>
+        <p>About Us</p>
+        <p>Payment Policy</p>
+    </div>
+    <div class="add3">
+        <p>Get Help</p>
+        <p>FAQ</p>
+        <p>Delivery</p>
+        <p>Order Status</p>
+        <p>Payment Options</p>
+    </div>
+    <div class="add4">
+        <p>Follow us </p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+</footer>
+<script>
+    document.querySelector('.fa-search').addEventListener('click', function() {
+    var searchBar = document.getElementById('search-bar');
+    searchBar.style.display = (searchBar.style.display === 'none' || searchBar.style.display === '') ? 'block' : 'none';
+});
+
+</script>
+</body>
+</html>

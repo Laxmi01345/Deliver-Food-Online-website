@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/Register page</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loginbg">
+            <div class="box signin">
+                <h2>Already Have an Account ?</h2>
+                <button class="signinbtn">Sign in</button>
+            </div>
+            <div class="box signup">
+                <h2>Don't Have an Account ?</h2>
+                <button class="signupbtn">Sign up</button>
+            </div>
+        </div>
+        <div class="formbx">
+            <div class="form signinform">
+                <form >
+                    <h2>Foodies</h2>
+                    <h3>Sign In</h3>
+                    <input type="text" id="signInUsername" placeholder="Username">
+                    <input type="password" id="signInPassword" placeholder="Password">
+                    
+                        <input type="button" value="Login" onclick="validateSignIn()">
+                    
+                    <a href="">Forgot password ?</a>
+                </form>
+            </div>
+            <div class="form signupform">
+                <form onsubmit="return validateSignUp()">
+                    <h3>Sign Up</h3>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                    <input type="text" id="email" placeholder="Email">
+                    <input type="date" id="dob" placeholder="Enter your Date of birth">
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signinbtn = document.querySelector('.signinbtn');
+        const signupbtn = document.querySelector('.signupbtn');
+        const formbx = document.querySelector('.formbx');
+        const body = document.querySelector('body');
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        signupbtn.onclick = function () {
+            formbx.classList.add('active');
+            body.classList.add('active');
+        }
+
+        signinbtn.onclick = function () {
+            formbx.classList.remove('active');
+            body.classList.remove('active');
+        }
+
+        function validateSignIn() {
+        const signInUsername = document.getElementById('signInUsername').value;
+        const signInPassword = document.getElementById('signInPassword').value;
+
+        if (!signInUsername || !signInPassword) {
+            alert('Both username and password must be filled');
+            return;
+        }
+
+        alert('Form submitted successfully! Redirecting to home page...');
+        window.location.href = 'home.html';
+
+        
+
+        // Simulate form submission for now. You can replace this with your actual form submission logic.
+
+
+    }
+
+
+        function validateSignUp() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const dob = document.getElementById('dob').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (!name || !email || !dob || !password || !confirmPassword) {
+                alert('All fields must be filled');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Password and Confirm Password must match');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

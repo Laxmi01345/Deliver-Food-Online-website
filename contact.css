@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 0.1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact1 {
+    width: 100%;
+    height: auto;
+    background: url('cc.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    width: 100%;
+    max-width: 400px;
+    background-color: antiquewhite;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.contact2 {
+    background-color: brown;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner2 {
+    padding: 5%;
+    text-align: center;
+    width: 80%; /* Adjusted width for better responsiveness */
+}
+
+#title {
+    background-color: aqua;
+    font-size: 2.9em;
+    margin-bottom: 2%;
+}
+
+.ele {
+    margin: 3%;
+}
+
+#mar {
+    margin-bottom: 2%;
+    width: 100%; /* Ensure the input takes the full width */
+    padding: 2%;
+}
+
+#textbox {
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.btn {
+    padding: 1%;
+    font-size: 1.5em;
+    margin: 2% 0;
+}
+
+.btn:hover {
+    background-color: rgb(138, 232, 44);
+    font-weight: bold;
+}
